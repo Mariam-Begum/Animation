@@ -1,0 +1,57 @@
+@keyframes football{
+	0%{
+		top: 0px;
+		left: 0px;
+		transform: rotate(360deg);
+	}
+	20%{
+		top: 0px;
+		left:50%;
+		transform: rotate(-360deg);
+	}
+	40%{
+		top: 50%;
+		left: 50%;
+		transform: rotate(360deg);
+	}
+	60%{
+		top: 50%;
+		left: 80%;
+		transform: rotate(-360deg);
+	}
+	70%{
+		top: 80%;
+		left: 80%;
+		transform: rotate(-360deg);
+	}
+	80%{
+		top: 70%;
+		left: 0%;
+		transform: rotate(-360deg);
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+		transform: rotate(360deg);
+	}
+}
+.parent{
+	width: 60%;
+	height: 600px; 
+	margin: 100px auto;
+	border: 1px solid red;
+	position: relative;
+}
+.child{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: absolute;
+	animation: 10s football linear alternate infinite;
+}
+.child img{
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	display: block;
+}
